@@ -18,6 +18,10 @@ export default {
       fontSize: {
         t12: "12px",
         t14: "14px",
+      },
+      zIndex:{
+        z999: "999",
+        zM10: "-10"
       }
     },
   },

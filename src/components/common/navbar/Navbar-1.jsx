@@ -5,13 +5,14 @@ import { MenuIcon } from "../../Icons";
 import { NavStyle } from "./NavStyles";
 import { NavItems } from "../../library/data/data";
 import { MobileMenubar } from "./MobileMenubar";
+import { cn } from "../../library/utilities/cn";
 
-export const NavbarPOne = () => {
+export const NavbarPOne = ({className}) => {
   const [isOpen, setIsOpen] = useState(false)
   
   return (
-    <Container className="px-4 border-b border-b-accent/20">
-      <div className="flex justify-between items-center pb-[15px] ">
+    <Container className={cn("px-4 z-z999 border-b border-b-accent/20", className)}>
+      <div className="flex justify-between items-center pb-[15px] z-50">
         <a href="/">
           <img src="Logo.svg" alt="logo" />
         </a>
@@ -26,7 +27,7 @@ export const NavbarPOne = () => {
           {NavItems.map((items, index) => (
             <NavStyle
               key={index}
-              direction={`./${items.toLowerCase().replace(/\s+/g, "-")}`}
+              direction={`/${items.toLowerCase().replace(/\s+/g, "-")}`}
               children={items}
             />
           ))}

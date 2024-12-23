@@ -7,3 +7,11 @@ export const NavItems = [
     "Documents",
     "Cypher AI",
   ];
+
+
+  export const ImageDetails = [
+    {
+      image: './image-1.png',
+       
+    },
+  ]
