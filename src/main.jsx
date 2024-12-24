@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, Router, RouterProvider } from 'react-router-dom'
 import { Dashboard } from './components/dashboard/DashboardSection.jsx'
+import { Incidents } from './components/incidents/IncidentsSection.jsx'
 // import { Dashboard } from './components/dashboard/DashboardSection.jsx'
 
 
@@ -12,6 +13,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<App/>}>
       <Route index element={<Dashboard/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
+      <Route path='/Incidents' element={<Incidents/>}/>
 
       <Route path='*' element={<div className='text-center flex flex-col text-5xl py-20'>
         <span className='text-red-500'>404!</span>

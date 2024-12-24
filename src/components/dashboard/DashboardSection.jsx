@@ -12,7 +12,15 @@ export const Dashboard = ()=>{
 
   return(
     <div className=" w-full">
-      <NavbarPTwo itemTitle="Welcome Back" itemName="Dashboard"/>
+      <NavbarPTwo
+      itemTitle="Welcome Back" 
+      itemName="Dashboard"
+      pDiv="justify-between items-center gap-[14px]"
+      SIClass=""
+      SBDClass="sm:flex hidden"
+      BClass="md:block hidden"
+      children="Cypher AI"
+      />
       <Container className="py-7 sm:pt-[200px] pt-[220px]">
         <NewsList/>
         <div>
