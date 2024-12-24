@@ -9,7 +9,7 @@ export const NavItems = [
   ];
 
 
-  export const ImageDetails = [
+export const ImageDetails = [
     {
       image: './image-1.png',
       header: "Whitechapel Rd.",
@@ -46,4 +46,24 @@ export const NavItems = [
       para: "Tulare County,  Los Angles, CA 23415",
       price: "$1,456,654.00",
     },
-  ]
+  ];
+
+
+export const IncidentsData = [
+  {
+    logo: './radioActive.svg',
+    title: "What type of incident?",
+    para: "Choose the category that best describes the incident.",
+  },
+  {
+    logo: './comment.svg',
+    title: "Tell us about the incident?",
+    para: "Let’s connect the dots and see where to start.",
+  },
+  {
+    logo: './mapIcon.svg',
+    title: "Where did the incident occur?",
+    para: "Lorem ipsum dolar sit general sac mascho werho",
+  },
+]
+

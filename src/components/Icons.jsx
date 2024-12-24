@@ -18,9 +18,9 @@ export const Bell = ()=>{
 }
 
 
-export const MenuIcon =()=>{
+export const MenuIcon =(props)=>{
   return(
-    <div className="p-2 text-gray-600 hover:text-gray-800 focus:outline-none block lg:hidden">
+    <div className="p-2 text-gray-600 hover:text-gray-800 active:scale-90 active:shadow-md rounded-full focus:outline-none block lg:hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6"
@@ -30,6 +30,7 @@ export const MenuIcon =()=>{
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+        {...props}
       >
         <line x1="3" y1="12" x2="21" y2="12"></line>
         <line x1="3" y1="6" x2="21" y2="6"></line>

@@ -22,7 +22,7 @@ export const ChatBox = ({isVisible}) => {
 
   return (
     isVisible && (
-      <div className="z fixed bottom-20 right-5 lg:w-[331px] lg:h-[476px] w-[280px] h-[400px] bg-[#F4F4F5] border border-gray-300 rounded-lg shadow-lg flex flex-col justify-between">
+      <div className="z fixed bottom-20 right-1 sm:right-5 lg:w-[331px] lg:h-[476px] md:w-[280px] md:h-[400px] h-[300px] sm:w-[240px] bg-color1 border border-gray-300 rounded-lg shadow-lg flex flex-col justify-between">
         <div className="bg-primary rounded-t-lg text-white font-bold w-full px-4 py-6">
           <p>Chat with Cypher</p>
         </div>

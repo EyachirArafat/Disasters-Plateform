@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, Router, RouterProvider } from 'react-router-dom'
 import { Dashboard } from './components/dashboard/DashboardSection.jsx'
 import { Incidents } from './components/incidents/IncidentsSection.jsx'
-// import { Dashboard } from './components/dashboard/DashboardSection.jsx'
+import { CreateNew } from './components/incidents/newIncidents/CreateNew.jsx'
 
 
 const router = createBrowserRouter(
@@ -13,7 +13,9 @@ const router = createBrowserRouter(
     <Route path='/' element={<App/>}>
       <Route index element={<Dashboard/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
-      <Route path='/Incidents' element={<Incidents/>}/>
+      <Route path="/incidents" element={<Incidents />}/>
+      <Route path="new-incident" element={<CreateNew />}/>
+
 
       <Route path='*' element={<div className='text-center flex flex-col text-5xl py-20'>
         <span className='text-red-500'>404!</span>
@@ -26,6 +28,6 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}/>
   </React.StrictMode>
 )

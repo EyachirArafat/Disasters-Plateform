@@ -10,7 +10,8 @@ export default {
         primary: "#F26922",
         secondary: "#E4E4E7",
         accent: "#71717A",
-        pHover: "#FB923C"
+        pHover: "#FB923C",
+        color1: "#F4F4F5"
       },
       fontFamily: {
         onest: ['Onest', 'serif']

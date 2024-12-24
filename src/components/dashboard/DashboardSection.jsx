@@ -11,12 +11,13 @@ export const Dashboard = ()=>{
   const toggleChatBox =()=>{setIsChatVisible(!isChatVisible)}
 
   return(
-    <div className=" w-full">
+    <div className="-z-10 absolute w-full">
       <NavbarPTwo
+      className=""
       itemTitle="Welcome Back" 
       itemName="Dashboard"
       pDiv="justify-between items-center gap-[14px]"
-      SIClass=""
+      SIClass="flex justify-center items-center"
       SBDClass="sm:flex hidden"
       BClass="md:block hidden"
       children="Cypher AI"

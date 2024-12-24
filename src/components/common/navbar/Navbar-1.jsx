@@ -12,7 +12,7 @@ export const NavbarPOne = ({className}) => {
   
   return (
     <Container className={cn("px-4 z-z999 border-b border-b-accent/20", className)}>
-      <div className="flex justify-between items-center pb-[15px] z-50">
+      <div className="flex justify-between items-center pb-[15px] z-z9999">
         <a href="/">
           <img src="Logo.svg" alt="logo" />
         </a>

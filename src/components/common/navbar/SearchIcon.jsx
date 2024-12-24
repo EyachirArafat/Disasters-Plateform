@@ -2,7 +2,7 @@ import { cn } from "../../library/utilities/cn"
 
 export const SearchIcon =({SIClass})=>{
   return(
-    <div className={cn("justify-center items-center bg-white pl-2 gap-2 rounded-md", SIClass)}>
+    <div className={cn("bg-white pl-2 gap-2 rounded-md", SIClass)}>
       <svg
       xmlns="http://www.w3.org/2000/svg"
       className="h-[18px] w-[18px] text-gray-500 cursor-pointer "
