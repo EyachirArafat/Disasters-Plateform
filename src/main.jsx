@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, Router, RouterProvider } from 'react-router-dom'
-import { Dashboard } from './components/DashboardSection.jsx'
+import { Dashboard } from './components/dashboard/DashboardSection.jsx'
+// import { Dashboard } from './components/dashboard/DashboardSection.jsx'
 
 
 const router = createBrowserRouter(

@@ -21,7 +21,9 @@ export default {
       },
       zIndex:{
         z999: "999",
-        zM10: "-10"
+        z9999: "9999",
+        zM15: "-15",
+        zM5: "-5"
       },
       screens: {
         xsm: "410px"

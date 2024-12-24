@@ -6,7 +6,7 @@ import { SortByDropdown } from "./SortByDropdown"
 
 export const NavbarPTwo =({itemName, itemTitle})=>{
   return(
-    <div className="bg-secondary w-full fixed mt-[84px] pb-4 md:pb-5 mb-5 z-50">
+    <div className="bg-secondary w-full fixed mt-[84px] pb-4 md:pb-5 mb-5 z-zM5">
 
     <Container className='md:pt-6 pt-4 '> 
       <div className="flex justify-between items-center gap-3 flex-wrap py-[6px] z-50">

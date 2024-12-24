@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChatBubble } from "./ChatBubbles";
-import { Attach, Camera, Photos } from "../Icons";
+import { Camera,  Photos, Attach } from "../../Icons";
 
 
 export const ChatBox = ({isVisible}) => {
