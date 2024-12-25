@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavbarPTwo } from "../../../common/navbar/Navbar-2";
 import { Container } from "../../../common/Container";
 import { ItemTitle } from "../../../common/navbar/ItemTitle";
 import { cn } from "../../../library/utilities/cn";
 import { Button } from "../../../common/button";
 
-export const GetStarted = ({ itemTitle, itemName, pDiv, progress, onDelete }) => {
+export const GetStarted = ({ itemTitle, itemName, pDiv, progress, onDelete, BackButton, NextButton, goBack, goNext }) => {
+
+  
+
   return (
-    <div className="bg-secondary w-full mt-[84px] pb-4 md:pb-5 mb-5 fixed right-0 left-0">
+    <div className="bg-secondary w-full mt-[84px] pb-4 md:pb-5 mb-5 fixed top-0 right-0 left-0">
       <Container className="md:pt-6 pt-4 ">
         <div className="flex justify-between items-center gap-3 flex-wrap py-[6px] ">
           <div className="flexCC gap-3">
@@ -34,11 +37,20 @@ export const GetStarted = ({ itemTitle, itemName, pDiv, progress, onDelete }) =>
             </div>
           </div>
           <div className="flex justify-between items-center gap-2">
+            {goBack && (
+               <Button
+               children={BackButton}
+               className="bg-white !hover:text-white !text-accent"
+               direction={goBack}
+             />
+            )}
+                 
             <Button
-              children="Back"
-              className="bg-white !hover:text-white !text-accent"
+              children={NextButton}
+              className={cn(!goNext && "cursor-not-allowed opacity-50")}
+              direction={goNext}
+              disabled={!goNext}
             />
-            <Button children="Next" className="" />
           </div>
         </div>
       </Container>

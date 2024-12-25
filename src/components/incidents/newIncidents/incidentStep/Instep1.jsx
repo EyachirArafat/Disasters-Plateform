@@ -3,7 +3,7 @@ import { Container } from '../../../common/Container'
 import { GetStarted } from './GetStarted'
 import { describesInData } from '../../../library/data/data'
 
-export const Instep1 = () => {
+export const InStep1 = () => {
   const [isSelected, setIsSelected] = useState(null);
   const [progress, setProgress] = useState(0);
 
@@ -24,9 +24,11 @@ export const Instep1 = () => {
         itemTitle="Home - Incidents - New Incident" itemName="New Incident"
         progress={progress}
         onDelete={handleDelete}
+        BackButton="Back"
+        NextButton="Next"
+        goNext="incidents/get-started/step-2"
         />
-
-        <div className='md:pt-[230px] sm:pt-[255px] pt-[265px] '>
+        <div className='md:pt-[50px] pt-[40px]'>
           <div className='max-w-[753px] max-h-[445px] flex flex-col gap-[25px] mx-auto'>
             <h1 className='text-2xl font-bold'>Which of these best describes the incident?</h1>
             <div className='grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-[11px]'>

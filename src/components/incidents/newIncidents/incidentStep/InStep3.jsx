@@ -21,6 +21,8 @@ export const InStep3 = () => {
     setSearchAddress('')
     setPinpointDamage('')
   };
+
+  const canNavigateNext = searchAddress.trim() && pinpointDamage.trim()
   return (
     <div>
       <Container>
@@ -29,9 +31,12 @@ export const InStep3 = () => {
           itemName="New Incident"
           progress={progress}
           onDelete={handleDelete}
-          
+          BackButton="Back"
+          NextButton="Finish"
+          goBack="incidents/get-started/step-2"
+          goNext={canNavigateNext ? "locations" : null}
         />
-        <div className="md:pt-[230px] sm:pt-[255px] pt-[265px]">
+        <div className="md:pt-[50px] pt-[40px]">
           <div className="max-w-[753px] max-h-[589px] flex flex-col gap-4 mx-auto">
           <div>
             <h1 className='sm:text-2xl text-xl font-bold'>Where’s the incident?</h1>
@@ -42,15 +47,17 @@ export const InStep3 = () => {
               <div className="flex flex-col gap-2 max-w-[220px] absolute top-2 left-2">
                 <SearchIcon 
                 PH="Enter incident address or GPS"
-                SIClass="flex items-center bg-color1"
+                SIClass="flex items-center "
                 onChange={(e)=>setSearchAddress(e.target.value)}
                 value={searchAddress}
+                inClass="sm:text-sm text-[8px] p-2"
                 />
                 <SearchIcon 
                 PH="Pinpoint damage"
                 SIClass="flex items-center bg-color1"
                 onChange={(e)=>setPinpointDamage(e.target.value)}
                 value={pinpointDamage}
+                inClass="sm:text-sm text-[8px] p-2"
                 />
               </div>
             </div>

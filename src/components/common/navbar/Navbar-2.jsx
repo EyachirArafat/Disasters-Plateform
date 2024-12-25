@@ -1,13 +1,12 @@
 import { NavLink } from "react-router-dom"
 import { cn } from "../../library/utilities/cn"
-import { Button } from "../button"
 import { Container } from "../Container"
 import { ItemTitle } from "./ItemTitle"
 import { SearchIcon } from "./SearchIcon"
 import { SortByDropdown } from "./SortByDropdown"
-import { Children } from "react"
 
-export const NavbarPTwo =({itemName, itemTitle, pDiv, SIClass, SBDClass, BClass, children, direction})=>{
+
+export const NavbarPTwo =({itemName, itemTitle, pDiv, SIClass, SBDClass, children, direction})=>{
   return(
     <div className="bg-secondary w-full fixed mt-[84px] pb-4 md:pb-5 mb-5 z-10">
 

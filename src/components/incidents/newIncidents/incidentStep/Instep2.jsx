@@ -3,7 +3,7 @@ import { Container } from '../../../common/Container'
 import { GetStarted } from './GetStarted'
 
 
-export const Instep2 = () => {
+export const InStep2 = () => {
   const [progress, setProgress] = useState(1)
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -21,6 +21,7 @@ export const Instep2 = () => {
     setTitle('')
     setDescription('')
   }
+   const canNavigateNext = title.trim() && description.trim();
   
   return ( 
     <div className=''>
@@ -30,9 +31,13 @@ export const Instep2 = () => {
         itemName="New Incident"
         progress={progress}
         onDelete={handleDelete}
+        BackButton="Back"
+        NextButton="Next"
+        goBack="incidents/get-started/step-1"
+        goNext={canNavigateNext ? "incidents/get-started/step-3" : null}
         />
 
-        <div className='md:pt-[230px] sm:pt-[255px] pt-[265px] '>
+        <div className='md:pt-[50px] pt-[40px]'>
           <div className='max-w-[752px] max-h-[366px] mx-auto flex flex-col gap-6'>
             <div className='space-y-6'>
               <div>

@@ -2,10 +2,9 @@ import React from 'react'
 import { Container } from '../../common/Container'
 import { IncidentsData } from '../../library/data/data'
 import { Button } from '../../common/button'
-import { useNavigate } from 'react-router-dom'
 
 export const CreateNew = () => {
-  
+ 
   return (
     <Container className="px-0">
      
@@ -34,7 +33,7 @@ export const CreateNew = () => {
             ))}
           </div>
         </div>
-        <Button className="my-4" direction="step-1" children="Get Started"/>
+        <Button className="my-4" direction="incidents/get-started/step-1" children="Get Started"/>
       </div>
       
     </Container>
