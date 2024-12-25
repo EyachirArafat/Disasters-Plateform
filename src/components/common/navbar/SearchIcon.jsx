@@ -1,6 +1,6 @@
 import { cn } from "../../library/utilities/cn"
 
-export const SearchIcon =({SIClass})=>{
+export const SearchIcon =({SIClass,PH, onChange, value})=>{
   return(
     <div className={cn("bg-white pl-2 gap-2 rounded-md", SIClass)}>
       <svg
@@ -16,7 +16,7 @@ export const SearchIcon =({SIClass})=>{
       <circle cx="11" cy="11" r="8" />
       <line x1="21" y1="21" x2="16.65" y2="16.65" />
       </svg>
-      <input type="text" className="text-sm p-2 outline-none focus:border appearance-none rounded-e-md" placeholder="search here"/>
+      <input type="text" className="text-sm p-2 outline-none focus:border appearance-none rounded-e-md" placeholder={PH} value={value} onChange={onChange}/>
     </div>
   )
 }

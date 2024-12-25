@@ -61,27 +61,3 @@ export const Instep2 = () => {
     </div>
   )
 }
-/*
-<div className="space-y-6">
-  
-  <div>
-    <h1 className="text-2xl font-bold">Let's give the incident a title</h1>
-    <p className="text-t14 text-accent">Make a title that will easily identify the incident</p>
-    <input
-      type="text"
-      placeholder="Add title here"
-      className="mt-2 w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:outline-none"
-    />
-  </div>
-
-  
-  <div>
-    <h1 className="text-2xl font-bold">Describe what happened during the incident</h1>
-    <p className="text-t14 text-accent">Share some information about the incident: the when, where, and how.</p>
-    <textarea
-      className="mt-2 w-full p-3 h-32 border border-gray-300 rounded-lg bg-color1 focus:ring-2 focus:ring-primary focus:outline-none resize-none"
-      placeholder="Type here"
-    />
-  </div>
-</div>
-*/

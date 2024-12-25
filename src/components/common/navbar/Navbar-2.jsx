@@ -16,7 +16,10 @@ export const NavbarPTwo =({itemName, itemTitle, pDiv, SIClass, SBDClass, BClass,
         <ItemTitle itemTitle={itemTitle} itemName={itemName}/>
         <div className={cn("flex ",pDiv)}>
           <div>
-            <SearchIcon SIClass={SIClass}/>
+            <SearchIcon 
+            SIClass={SIClass}
+            PH="search here"
+            />
             
           </div>
           <SortByDropdown className={SBDClass}/>
