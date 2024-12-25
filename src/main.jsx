@@ -7,7 +7,7 @@ import { Dashboard } from './components/dashboard/DashboardSection.jsx'
 import { Incidents } from './components/incidents/IncidentsSection.jsx'
 import { CreateNew } from './components/incidents/newIncidents/CreateNew.jsx'
 import { GetStarted } from './components/incidents/newIncidents/incidentStep/GetStarted.jsx'
-import { Instep1 } from './components/incidents/newIncidents/incidentStep/Instep1.jsx'
+import { Instep2 } from './components/incidents/newIncidents/incidentStep/Instep2.jsx'
 
 
 const router = createBrowserRouter(
@@ -17,10 +17,10 @@ const router = createBrowserRouter(
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path="/incidents" element={<Incidents />}>
         <Route path="get-started" element={<CreateNew />}/>
-        <Route path="step-1" element={<Instep1 />}/>
+        {/* <Route path="step-1" element={<Instep1 />}/> */}
       </Route>
 
-      <Route path="/cypher-ai" element={<Instep1 />}/>
+      <Route path="/cypher-ai" element={<Instep2 />}/>
 
 
       <Route path='*' element={<div className='text-center flex flex-col text-5xl py-20 '>

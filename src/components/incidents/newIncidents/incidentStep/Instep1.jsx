@@ -4,11 +4,27 @@ import { GetStarted } from './GetStarted'
 import { describesInData } from '../../../library/data/data'
 
 export const Instep1 = () => {
-  const [isSelected, setIsSelected] = useState(null)
+  const [isSelected, setIsSelected] = useState(null);
+  const [progress, setProgress] = useState(0);
+
+  const handleSelection =(id)=>{
+    setIsSelected(id);
+    setProgress(1);
+  }
+
+  const handleDelete =()=>{
+    setProgress(0)
+    setIsSelected(null)
+  }
+
   return ( 
     <div className=''>
       <Container >
-        <GetStarted itemTitle="Home - Incidents - New Incident" itemName="New Incident"/>
+        <GetStarted 
+        itemTitle="Home - Incidents - New Incident" itemName="New Incident"
+        progress={progress}
+        onDelete={handleDelete}
+        />
 
         <div className='md:pt-[230px] sm:pt-[255px] pt-[265px] '>
           <div className='max-w-[753px] max-h-[445px] flex flex-col gap-[25px] mx-auto'>
@@ -19,16 +35,14 @@ export const Instep1 = () => {
                   isSelected === items.id
                     ? 'bg-primary text-white'
                     : 'bg-secondary hover:bg-primary hover:text-white'
-                }`} onClick={()=>setIsSelected(items.id)}>
+                }`} onClick={()=>handleSelection(items.id)}>
                   <img className='hover:text-white' src={items.logo} alt={items.name} />
                   <p className='text-wrap'>{items.name}</p>
                 </div>
               ))}
 
             </div>
-
           </div>
-          
         </div>
       </Container>
     </div>
