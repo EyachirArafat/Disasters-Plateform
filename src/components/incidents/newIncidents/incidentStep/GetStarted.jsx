@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavbarPTwo } from "../../../common/navbar/Navbar-2";
 import { Container } from "../../../common/Container";
 import { ItemTitle } from "../../../common/navbar/ItemTitle";
 import { cn } from "../../../library/utilities/cn";
@@ -10,7 +9,7 @@ export const GetStarted = ({ itemTitle, itemName, pDiv, progress, onDelete, Back
   
 
   return (
-    <div className="bg-secondary w-full mt-[84px] pb-4 md:pb-5 mb-5 fixed top-0 right-0 left-0">
+    <div className="bg-secondary w-full mt-[84px] pb-4 md:pb-5 mb-5 fixed z-z999 top-0 right-0 left-0">
       <Container className="md:pt-6 pt-4 ">
         <div className="flex justify-between items-center gap-3 flex-wrap py-[6px] ">
           <div className="flexCC gap-3">

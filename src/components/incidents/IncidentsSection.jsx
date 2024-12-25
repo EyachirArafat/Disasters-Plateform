@@ -14,6 +14,7 @@ export const Incidents = () => {
       <NavbarPTwo 
       itemTitle="Home - Incidents" 
       itemName="Incidents"
+      iTClass="gap-0"
       pDiv="justify-start items-start sm:justify-between sm:items-center sm:gap-[14px]"
       SIClass="sm:flex hidden justify-center items-center"
       SBDClass="md:block hidden"

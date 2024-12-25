@@ -9,6 +9,7 @@ import { CreateNew } from './components/incidents/newIncidents/CreateNew.jsx'
 import { InStep1 } from './components/incidents/newIncidents/incidentStep/InStep1.jsx'
 import { InStep2 } from './components/incidents/newIncidents/incidentStep/Instep2.jsx'
 import { InStep3 } from './components/incidents/newIncidents/incidentStep/InStep3.jsx'
+import { LocationsSection } from './components/locations/LocationsSection.jsx'
 
 
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
         <Route path="get-started/step-2" element={<InStep2 />}/>
         <Route path="get-started/step-3" element={<InStep3 />}/>
       </Route>
+      <Route path="/locations" element={<LocationsSection/>}/>
 
       <Route path='*' element={<div className='text-center flex flex-col text-5xl py-20 '>
         <span className='text-red-500 pt-40'>404!</span>

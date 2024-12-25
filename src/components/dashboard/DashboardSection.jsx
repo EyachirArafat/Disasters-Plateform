@@ -16,6 +16,7 @@ export const Dashboard = ()=>{
       className=""
       itemTitle="Welcome Back" 
       itemName="Dashboard"
+      iTClass="gap-0"
       pDiv="justify-between items-center gap-[14px]"
       SIClass="flex justify-center items-center"
       SBDClass="sm:flex hidden"

@@ -24,7 +24,7 @@ export const InStep3 = () => {
 
   const canNavigateNext = searchAddress.trim() && pinpointDamage.trim()
   return (
-    <div>
+    <div className="-z-10 absolute">
       <Container>
         <GetStarted
           itemTitle="Home - Incidents - New Incident"
@@ -42,8 +42,8 @@ export const InStep3 = () => {
             <h1 className='sm:text-2xl text-xl font-bold'>Where’s the incident?</h1>
             <p className='text-t14 text-accent max-w-[518px]'>Enter a GPS, address. or pin point on the map. Try to be as accurate as possible, or click:Jurisdiction Wide</p>
           </div>
-            <div className="rounded-lg relative object-cover">
-              <img src="/map1.png" alt="map" />
+            <div className="rounded-lg relative object-cover ">
+              <img className="" src="/map1.png" alt="map" />
               <div className="flex flex-col gap-2 max-w-[220px] absolute top-2 left-2">
                 <SearchIcon 
                 PH="Enter incident address or GPS"
