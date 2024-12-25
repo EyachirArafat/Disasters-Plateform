@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { Container } from '../../../common/Container'
-import { GetStarted } from './GetStarted'
-import { describesInData } from '../../../library/data/data'
+import React, { useState } from "react";
+import { Container } from "./components/common/Container";
+import { GetStarted } from "./components/incidents/newIncidents/incidentStep/GetStarted";
+import { describesInData } from "./components/library/data/data";
 
 export const InStep1 = () => {
   const [isSelected, setIsSelected] = useState(null);

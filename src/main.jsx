@@ -6,7 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import { Dashboard } from './components/dashboard/DashboardSection.jsx'
 import { Incidents } from './components/incidents/IncidentsSection.jsx'
 import { CreateNew } from './components/incidents/newIncidents/CreateNew.jsx'
-import { InStep1 } from './components/incidents/newIncidents/incidentStep/InStep1.jsx'
+import { InStep1 } from './InStep1.jsx'
 import { InStep2 } from './components/incidents/newIncidents/incidentStep/Instep2.jsx'
 import { InStep3 } from './components/incidents/newIncidents/incidentStep/InStep3.jsx'
 import { LocationsSection } from './components/locations/LocationsSection.jsx'
