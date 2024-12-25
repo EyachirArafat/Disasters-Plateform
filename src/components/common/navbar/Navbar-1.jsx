@@ -14,7 +14,7 @@ export const NavbarPOne = ({className}) => {
     <Container className={cn("px-4 z-z999 border-b border-b-accent/20", className)}>
       <div className="flex justify-between items-center pb-[15px] z-z9999">
         <a href="/">
-          <img src="Logo.svg" alt="logo" />
+          <img src="/Logo.svg" alt="logo" />
         </a>
 
         {/* <div className='gap-9 text-nowrap text-t14 font-bold lg:flex hidden text-accent'>
@@ -37,7 +37,7 @@ export const NavbarPOne = ({className}) => {
           <NotificationBell className="sm:flex hidden" />
 
           <button title="User">
-            <img className="size-11" src="user.svg" alt="user" />
+            <img className="size-11" src="/user.svg" alt="user" />
           </button>
           <div className="text-accent xl:flex flex-col justify-center items-start hidden">
             <h3 className="text-[16px]  font-semibold leading-4">

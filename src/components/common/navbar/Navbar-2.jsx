@@ -5,8 +5,9 @@ import { Container } from "../Container"
 import { ItemTitle } from "./ItemTitle"
 import { SearchIcon } from "./SearchIcon"
 import { SortByDropdown } from "./SortByDropdown"
+import { Children } from "react"
 
-export const NavbarPTwo =({itemName, itemTitle, pDiv, SIClass, SBDClass, BClass, children})=>{
+export const NavbarPTwo =({itemName, itemTitle, pDiv, SIClass, SBDClass, BClass, children, direction})=>{
   return(
     <div className="bg-secondary w-full fixed mt-[84px] pb-4 md:pb-5 mb-5 z-10">
 
@@ -20,10 +21,7 @@ export const NavbarPTwo =({itemName, itemTitle, pDiv, SIClass, SBDClass, BClass,
           </div>
           <SortByDropdown className={SBDClass}/>
           <NavLink
-              to={`/${children
-                ?.toLowerCase()
-                .replace(/[^a-z0-9\s]/g, "")
-                .replace(/\s+/g, "-")}`}
+              to={direction}
               className="bg-primary z-z9999 !text-white py-2 px-6 font-bold text-t12 text-nowrap leading-5 rounded-md cursor-pointer hover:bg-pHover hover:scale-105 transition-all duration-300"
             >
               {children}

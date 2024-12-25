@@ -6,6 +6,8 @@ import { createBrowserRouter, createRoutesFromElements, Route, Router, RouterPro
 import { Dashboard } from './components/dashboard/DashboardSection.jsx'
 import { Incidents } from './components/incidents/IncidentsSection.jsx'
 import { CreateNew } from './components/incidents/newIncidents/CreateNew.jsx'
+import { GetStarted } from './components/incidents/newIncidents/incidentStep/GetStarted.jsx'
+import { Instep1 } from './components/incidents/newIncidents/incidentStep/Instep1.jsx'
 
 
 const router = createBrowserRouter(
@@ -13,12 +15,16 @@ const router = createBrowserRouter(
     <Route path='/' element={<App/>}>
       <Route index element={<Dashboard/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
-      <Route path="/incidents" element={<Incidents />}/>
-      <Route path="new-incident" element={<CreateNew />}/>
+      <Route path="/incidents" element={<Incidents />}>
+        <Route path="get-started" element={<CreateNew />}/>
+        <Route path="step-1" element={<Instep1 />}/>
+      </Route>
+
+      <Route path="/cypher-ai" element={<Instep1 />}/>
 
 
-      <Route path='*' element={<div className='text-center flex flex-col text-5xl py-20'>
-        <span className='text-red-500'>404!</span>
+      <Route path='*' element={<div className='text-center flex flex-col text-5xl py-20 '>
+        <span className='text-red-500 pt-40'>404!</span>
         <span className='text-black text-3xl'>Page is not found</span>
       </div>}/>
     </Route>

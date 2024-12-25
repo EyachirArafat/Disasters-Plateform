@@ -21,6 +21,7 @@ export const Dashboard = ()=>{
       SBDClass="sm:flex hidden"
       BClass="md:block hidden"
       children="Cypher AI"
+      direction="cypher-ai"
       />
       <Container className="py-7 sm:pt-[200px] pt-[220px]">
         <NewsList/>
@@ -30,9 +31,9 @@ export const Dashboard = ()=>{
           className="fixed bottom-5 right-5 bg-primary text-white p-4 rounded-full shadow-lg z-50"
         >
           {isChatVisible ? (
-          <span  className="text-2xl size-5 font-bold">×</span>
+          <span  className="text-2xl w-5 h-5 flex justify-center items-center font-bold">×</span>
         ) : (
-          <span><CLetter/></span>
+          <span><CLetter className="w-5 h-5 flex justify-center items-center"/></span>
         )}
           
         </button>
