@@ -160,4 +160,40 @@ export const describesInData = [
   },
 ]
 
+export const BuildingData = [
+  {
+    image: './image-7.png',
+    header: 'Whitechapel Rd.',
+    para: 'Tulare County,  Los Angles, CA 23415',
+    price: '$1,456,654.00',
+  },
+  {
+    image: './image-8.png',
+    header: 'Whitechapel Rd.',
+    para: 'Tulare County,  Los Angles, CA 23415',
+    price: '$1,456,654.00',
+  },
+  {
+    image: './image-7.png',
+    header: 'Whitechapel Rd.',
+    para: 'Tulare County,  Los Angles, CA 23415',
+    price: '$1,456,654.00',
+  },
+  {
+    image: './image-7.png',
+    header: 'Whitechapel Rd.',
+    para: 'Tulare County,  Los Angles, CA 23415',
+    price: '$1,456,654.00',
+  },
+]
 
+{/* <ImageCard
+            image=""
+            styleIcon={<StormSky/>}
+            styleLabel="Building"
+            addTitle="Whitechapel Rd."
+            title="Tulare County,  Los Angles, CA 23415"
+
+            // addTitle, title, price, styleIcon, styleLabel, image
+            
+            /> */}
