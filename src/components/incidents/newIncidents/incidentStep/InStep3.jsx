@@ -24,7 +24,7 @@ export const InStep3 = () => {
 
   const canNavigateNext = searchAddress.trim() && pinpointDamage.trim()
   return (
-    <div className="-z-10 absolute">
+    <div className="">
       <Container>
         <GetStarted
           itemTitle="Home - Incidents - New Incident"
