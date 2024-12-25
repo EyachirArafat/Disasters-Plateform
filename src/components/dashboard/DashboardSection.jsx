@@ -23,6 +23,7 @@ export const Dashboard = ()=>{
       BClass="md:block hidden"
       children="Cypher AI"
       direction="cypher-ai"
+      buttonClass="xsm:block hidden"
       />
       <Container className="py-7 sm:pt-[200px] pt-[220px]">
         <NewsList/>
